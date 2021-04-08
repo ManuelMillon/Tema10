@@ -29,13 +29,18 @@ public class Tema10Ejercicio21 {
 		anfibioAlimentacion.put("tritón", " Se alimenta de insectos.");
 		
 		System.out.print("Introduzca el anfibio que le interese: ");
-		String anfibio = sc.nextLine();
+		
+		String anfibio = sc.nextLine().toLowerCase();
+		
+		
 		if (anfibioHabitat.containsKey(anfibio)) {
 			System.out.print(anfibioHabitat.get(anfibio)); 
 			System.out.println(anfibioAlimentacion.get(anfibio));
 		} else {
-			System.out.print("El anfibio introducido no se encuentra en este diccionario.");
+			System.out.print("La información introducida no se encuentra en este diccionario.");
 		}
+		
+		
 	}
 
 }
